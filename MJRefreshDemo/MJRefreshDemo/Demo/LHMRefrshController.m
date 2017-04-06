@@ -9,6 +9,7 @@
 #import "LHMRefrshController.h"
 #import "UIImage+LHMExtension.h"
 #import "MJRefresh.h"
+#import "LHMDIYHeader.h"//自定义
 @interface LHMRefrshController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSArray *dataArray;
@@ -106,8 +107,8 @@
     return header;
 }
 #pragma mark--斗鱼
--(MJRefreshNormalHeader *)setupDouyuRefresh{
-    MJRefreshNormalHeader *header=[MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(myRefresh)];
+-(LHMDIYHeader *)setupDouyuRefresh{
+    LHMDIYHeader *header=[LHMDIYHeader headerWithRefreshingTarget:self refreshingAction:@selector(myRefresh)];
     
     
     

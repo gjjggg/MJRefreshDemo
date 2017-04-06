@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FFCF6BB1E96808400148BB9 /* LHMDIYHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFCF6BA1E96808400148BB9 /* LHMDIYHeader.m */; };
 		6A6993DA1E960F670079E078 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6993D91E960F670079E078 /* main.m */; };
 		6A6993DD1E960F670079E078 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6993DC1E960F670079E078 /* AppDelegate.m */; };
 		6A6993E51E960F670079E078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A6993E41E960F670079E078 /* Assets.xcassets */; };
@@ -38,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FFCF6B91E96808400148BB9 /* LHMDIYHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMDIYHeader.h; sourceTree = "<group>"; };
+		0FFCF6BA1E96808400148BB9 /* LHMDIYHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMDIYHeader.m; sourceTree = "<group>"; };
 		6A6993D51E960F670079E078 /* MJRefreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJRefreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6993D91E960F670079E078 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A6993DB1E960F670079E078 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +109,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FFCF6BC1E96913C00148BB9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6A6993F21E96114A0079E078 /* LHMNaviViewController.h */,
+				6A6993F31E96114A0079E078 /* LHMNaviViewController.m */,
+				6A6993F51E9611790079E078 /* LHMRootViewController.h */,
+				6A6993F61E9611790079E078 /* LHMRootViewController.m */,
+				6A6993F81E9611DB0079E078 /* LHMRefrshController.h */,
+				6A6993F91E9611DB0079E078 /* LHMRefrshController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		0FFCF6BD1E96916000148BB9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6AF52F991E9629C4009EE3B1 /* UIImage+LHMExtension.h */,
+				6AF52F9A1E9629C4009EE3B1 /* UIImage+LHMExtension.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		0FFCF6BE1E96917600148BB9 /* DIY */ = {
+			isa = PBXGroup;
+			children = (
+				0FFCF6B91E96808400148BB9 /* LHMDIYHeader.h */,
+				0FFCF6BA1E96808400148BB9 /* LHMDIYHeader.m */,
+			);
+			name = DIY;
+			sourceTree = "<group>";
+		};
 		6A6993CC1E960F670079E078 = {
 			isa = PBXGroup;
 			children = (
@@ -147,14 +181,9 @@
 		6A6993EF1E960FC90079E078 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				6A6993F21E96114A0079E078 /* LHMNaviViewController.h */,
-				6A6993F31E96114A0079E078 /* LHMNaviViewController.m */,
-				6A6993F51E9611790079E078 /* LHMRootViewController.h */,
-				6A6993F61E9611790079E078 /* LHMRootViewController.m */,
-				6A6993F81E9611DB0079E078 /* LHMRefrshController.h */,
-				6A6993F91E9611DB0079E078 /* LHMRefrshController.m */,
-				6AF52F991E9629C4009EE3B1 /* UIImage+LHMExtension.h */,
-				6AF52F9A1E9629C4009EE3B1 /* UIImage+LHMExtension.m */,
+				0FFCF6BC1E96913C00148BB9 /* Main */,
+				0FFCF6BE1E96917600148BB9 /* DIY */,
+				0FFCF6BD1E96916000148BB9 /* Other */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -342,6 +371,7 @@
 				6A6993DA1E960F670079E078 /* main.m in Sources */,
 				6AF52FD81E962D39009EE3B1 /* MJRefreshStateHeader.m in Sources */,
 				6A6993F71E9611790079E078 /* LHMRootViewController.m in Sources */,
+				0FFCF6BB1E96808400148BB9 /* LHMDIYHeader.m in Sources */,
 				6AF52FDC1E962D39009EE3B1 /* UIScrollView+MJExtension.m in Sources */,
 				6AF52FD61E962D39009EE3B1 /* MJRefreshGifHeader.m in Sources */,
 				6AF52FD41E962D39009EE3B1 /* MJRefreshBackNormalFooter.m in Sources */,

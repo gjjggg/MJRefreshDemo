@@ -8,7 +8,8 @@
 //  下拉刷新控件:负责监控用户下拉的状态
 
 #import "MJRefreshComponent.h"
-
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
 @interface MJRefreshHeader : MJRefreshComponent
 /** 创建header */
 + (instancetype)headerWithRefreshingBlock:(MJRefreshComponentRefreshingBlock)refreshingBlock;
