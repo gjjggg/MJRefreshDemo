@@ -9,7 +9,10 @@
 #import "LHMRefrshController.h"
 #import "UIImage+LHMExtension.h"
 #import "MJRefresh.h"
-#import "LHMDIYHeader.h"//自定义
+
+#import "LHMDouyuHeader.h"//自定义
+#import "LHMBilbiliHeader.h"
+
 @interface LHMRefrshController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSArray *dataArray;
@@ -53,7 +56,12 @@
         _tableView.mj_header=[self setupDouyuRefresh];
         
         
-    }else if (showType==ShowTypeBilibili){//B站
+    }else if (showType==ShowTypeBilibili1){//B站1
+         _tableView.mj_header=[self setupBilibiliRefresh];
+        
+        
+    }else if (showType==ShowTypeBilibili2){//B站2
+       
         
         
     }else if (showType==ShowTypeEleme){//饿了么
@@ -62,9 +70,6 @@
     }else if (showType==ShowTypeJiudu){//九度财经
         
         _tableView.mj_header=[self setJiuduRefresh];
-        
-        
-        
     }
     
     
@@ -107,8 +112,8 @@
     return header;
 }
 #pragma mark--斗鱼
--(LHMDIYHeader *)setupDouyuRefresh{
-    LHMDIYHeader *header=[LHMDIYHeader headerWithRefreshingTarget:self refreshingAction:@selector(myRefresh)];
+-(LHMDouyuHeader *)setupDouyuRefresh{
+    LHMDouyuHeader *header=[LHMDouyuHeader headerWithRefreshingTarget:self refreshingAction:@selector(myRefresh)];
     
     
     
@@ -117,6 +122,10 @@
     
     
     
+}
+-(LHMBilbiliHeader *)setupBilibiliRefresh{
+    LHMBilbiliHeader *header=[LHMBilbiliHeader headerWithRefreshingTarget:self refreshingAction:@selector(myRefresh)];
+    return header;
 }
 #pragma mark--九度财经
 -(MJRefreshGifHeader *)setJiuduRefresh{
@@ -162,7 +171,7 @@
 
 -(void)setupData{
     _dataArray=@[@"疾风剑豪",@"德玛西亚之力",@"伊泽瑞尔",@"熔岩巨兽",@"卡米尔",@"兰博",@"盲审_李青",@"德玛西亚之翼",@"寒冰射手",@"维鲁斯",@"红领烬",@"Faker",@"世界第一ADC_UZI",@"麻辣叉鸡",@"mid_虎",@"ming神",@"Letme",@"clearlove_4396",@"韦神"];
-    _nameArray=@[@"普通样式",@"gif动画",@"仿新浪微博",@"仿斗鱼",@"仿B站",@"仿饿了么",@"仿九度财经"];
+    _nameArray=@[@"普通样式",@"gif动画",@"仿新浪微博",@"仿斗鱼",@"仿B站1",@"仿B站2",@"仿饿了么",@"仿九度财经"];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FFCF6BB1E96808400148BB9 /* LHMDIYHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFCF6BA1E96808400148BB9 /* LHMDIYHeader.m */; };
+		6A0E87D71E97427F00AD9ED3 /* LHMBilbiliHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E87D61E97427F00AD9ED3 /* LHMBilbiliHeader.m */; };
 		6A6993DA1E960F670079E078 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6993D91E960F670079E078 /* main.m */; };
 		6A6993DD1E960F670079E078 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6993DC1E960F670079E078 /* AppDelegate.m */; };
 		6A6993E51E960F670079E078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A6993E41E960F670079E078 /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 		6A6993F41E96114A0079E078 /* LHMNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6993F31E96114A0079E078 /* LHMNaviViewController.m */; };
 		6A6993F71E9611790079E078 /* LHMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6993F61E9611790079E078 /* LHMRootViewController.m */; };
 		6A6993FA1E9611DB0079E078 /* LHMRefrshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6993F91E9611DB0079E078 /* LHMRefrshController.m */; };
+		6A733D431E97288100197FDA /* LHMDouyuHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A733D421E97288100197FDA /* LHMDouyuHeader.m */; };
+		6A733D461E972B7700197FDA /* UIImageView+LHMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A733D451E972B7700197FDA /* UIImageView+LHMExtension.m */; };
 		6AF52F9B1E9629C4009EE3B1 /* UIImage+LHMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF52F9A1E9629C4009EE3B1 /* UIImage+LHMExtension.m */; };
 		6AF52FCB1E962D39009EE3B1 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF52F9F1E962D39009EE3B1 /* MJRefreshAutoFooter.m */; };
 		6AF52FCC1E962D39009EE3B1 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF52FA11E962D39009EE3B1 /* MJRefreshBackFooter.m */; };
@@ -41,6 +44,8 @@
 /* Begin PBXFileReference section */
 		0FFCF6B91E96808400148BB9 /* LHMDIYHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMDIYHeader.h; sourceTree = "<group>"; };
 		0FFCF6BA1E96808400148BB9 /* LHMDIYHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMDIYHeader.m; sourceTree = "<group>"; };
+		6A0E87D51E97427F00AD9ED3 /* LHMBilbiliHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMBilbiliHeader.h; sourceTree = "<group>"; };
+		6A0E87D61E97427F00AD9ED3 /* LHMBilbiliHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMBilbiliHeader.m; sourceTree = "<group>"; };
 		6A6993D51E960F670079E078 /* MJRefreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJRefreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6993D91E960F670079E078 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A6993DB1E960F670079E078 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +59,10 @@
 		6A6993F61E9611790079E078 /* LHMRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMRootViewController.m; sourceTree = "<group>"; };
 		6A6993F81E9611DB0079E078 /* LHMRefrshController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMRefrshController.h; sourceTree = "<group>"; };
 		6A6993F91E9611DB0079E078 /* LHMRefrshController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMRefrshController.m; sourceTree = "<group>"; };
+		6A733D411E97288100197FDA /* LHMDouyuHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMDouyuHeader.h; sourceTree = "<group>"; };
+		6A733D421E97288100197FDA /* LHMDouyuHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMDouyuHeader.m; sourceTree = "<group>"; };
+		6A733D441E972B7700197FDA /* UIImageView+LHMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LHMExtension.h"; sourceTree = "<group>"; };
+		6A733D451E972B7700197FDA /* UIImageView+LHMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LHMExtension.m"; sourceTree = "<group>"; };
 		6AF52F991E9629C4009EE3B1 /* UIImage+LHMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LHMExtension.h"; sourceTree = "<group>"; };
 		6AF52F9A1E9629C4009EE3B1 /* UIImage+LHMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LHMExtension.m"; sourceTree = "<group>"; };
 		6AF52F9E1E962D39009EE3B1 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
@@ -127,6 +136,8 @@
 			children = (
 				6AF52F991E9629C4009EE3B1 /* UIImage+LHMExtension.h */,
 				6AF52F9A1E9629C4009EE3B1 /* UIImage+LHMExtension.m */,
+				6A733D441E972B7700197FDA /* UIImageView+LHMExtension.h */,
+				6A733D451E972B7700197FDA /* UIImageView+LHMExtension.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -136,6 +147,10 @@
 			children = (
 				0FFCF6B91E96808400148BB9 /* LHMDIYHeader.h */,
 				0FFCF6BA1E96808400148BB9 /* LHMDIYHeader.m */,
+				6A733D411E97288100197FDA /* LHMDouyuHeader.h */,
+				6A733D421E97288100197FDA /* LHMDouyuHeader.m */,
+				6A0E87D51E97427F00AD9ED3 /* LHMBilbiliHeader.h */,
+				6A0E87D61E97427F00AD9ED3 /* LHMBilbiliHeader.m */,
 			);
 			name = DIY;
 			sourceTree = "<group>";
@@ -324,6 +339,7 @@
 				TargetAttributes = {
 					6A6993D41E960F670079E078 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 4LM9Y47E8Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -370,6 +386,7 @@
 				6AF52FD51E962D39009EE3B1 /* MJRefreshBackStateFooter.m in Sources */,
 				6A6993DA1E960F670079E078 /* main.m in Sources */,
 				6AF52FD81E962D39009EE3B1 /* MJRefreshStateHeader.m in Sources */,
+				6A733D461E972B7700197FDA /* UIImageView+LHMExtension.m in Sources */,
 				6A6993F71E9611790079E078 /* LHMRootViewController.m in Sources */,
 				0FFCF6BB1E96808400148BB9 /* LHMDIYHeader.m in Sources */,
 				6AF52FDC1E962D39009EE3B1 /* UIScrollView+MJExtension.m in Sources */,
@@ -379,6 +396,7 @@
 				6AF52FCD1E962D39009EE3B1 /* MJRefreshComponent.m in Sources */,
 				6AF52FD11E962D39009EE3B1 /* MJRefreshAutoNormalFooter.m in Sources */,
 				6A6993FA1E9611DB0079E078 /* LHMRefrshController.m in Sources */,
+				6A0E87D71E97427F00AD9ED3 /* LHMBilbiliHeader.m in Sources */,
 				6AF52FD01E962D39009EE3B1 /* MJRefreshAutoGifFooter.m in Sources */,
 				6AF52FCC1E962D39009EE3B1 /* MJRefreshBackFooter.m in Sources */,
 				6AF52FDE1E962D39009EE3B1 /* UIView+MJExtension.m in Sources */,
@@ -388,6 +406,7 @@
 				6AF52FDA1E962D39009EE3B1 /* MJRefreshConst.m in Sources */,
 				6AF52FDD1E962D39009EE3B1 /* UIScrollView+MJRefresh.m in Sources */,
 				6AF52FD31E962D39009EE3B1 /* MJRefreshBackGifFooter.m in Sources */,
+				6A733D431E97288100197FDA /* LHMDouyuHeader.m in Sources */,
 				6AF52FCF1E962D39009EE3B1 /* MJRefreshHeader.m in Sources */,
 				6AF52FD71E962D39009EE3B1 /* MJRefreshNormalHeader.m in Sources */,
 			);
@@ -499,7 +518,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4LM9Y47E8Q;
 				INFOPLIST_FILE = MJRefreshDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.linhongmin.MJRefreshDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,7 +532,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4LM9Y47E8Q;
 				INFOPLIST_FILE = MJRefreshDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.linhongmin.MJRefreshDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

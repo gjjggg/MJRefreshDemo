@@ -9,7 +9,9 @@
 #import "LHMDIYHeader.h"
 
 @interface LHMDIYHeader ()
-@property(nonatomic,weak)UIImageView *logo;
+@property(nonatomic,weak)UIImageView *logo1;
+@property(nonatomic,weak)UIImageView *logo2;
+
 @property(nonatomic,weak)UIView *bgView;
 @end
 @implementation LHMDIYHeader
@@ -18,22 +20,23 @@
 -(void)prepare{
     [super prepare];
     //设置控件高度
-    self.mj_h=50;
+    self.mj_h=100;
     //bgview
     UIView *bgView=[[UIView alloc]init];
-    bgView.backgroundColor=[UIColor redColor];    [self addSubview:bgView];
+    bgView.backgroundColor=kColor(211, 211, 211);
+    [self addSubview:bgView];
     self.bgView=bgView;
     //logo
     UIImageView *logo=[[UIImageView alloc]init];
     logo.image=[UIImage imageNamed:@"load_12"];
     [bgView addSubview:logo];
-    self.logo=logo;
+    self.logo1=logo;
 }
 #pragma mark--设置子控件的布局
 -(void)placeSubviews{
     [super placeSubviews];
     self.bgView.frame=self.bounds;
-    self.logo.frame=CGRectMake(0.5*kScreenWidth-25, 0, 50, 50);
+    self.logo1.frame=CGRectMake(0.5*kScreenWidth-25, 0, 50, 50);
     
 }
 #pragma mark--监听scrollview的contenoffset的改变

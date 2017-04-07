@@ -12,7 +12,8 @@ typedef NS_ENUM(NSInteger ,ShowType) {
     ShowTypeGif , //gif动画
     ShowTypeSina ,//新浪微博
     ShowTypeDouYu ,//斗鱼
-    ShowTypeBilibili ,//B站
+    ShowTypeBilibili1 ,//B站1
+    ShowTypeBilibili2 ,//B站2
     ShowTypeEleme , //饿了么
     ShowTypeJiudu , //九度财经
 
