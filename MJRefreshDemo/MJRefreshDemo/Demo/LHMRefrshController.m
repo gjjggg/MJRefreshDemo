@@ -12,6 +12,7 @@
 
 #import "LHMDouyuHeader.h"//自定义
 #import "LHMBilbiliHeader.h"
+#import "LHMBilibiliTwoHeader.h"
 
 @interface LHMRefrshController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
@@ -25,6 +26,7 @@
     
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor whiteColor];
+    
     [self setupData];
     self.title=_nameArray[self.showType];
     
@@ -35,6 +37,8 @@
         UITableView *tableView=[[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
         tableView.delegate=self;
         tableView.dataSource=self;
+        
+        
         _tableView=tableView;
         [self setRefreshType:self.showType];
     }
@@ -61,8 +65,10 @@
         
         
     }else if (showType==ShowTypeBilibili2){//B站2
-       
-        
+        _tableView.mj_header=[self setupOtherBilibiliRefresh];
+        UIView *headview=[[UIView alloc]initWithFrame:CGRectMake(0, -1000, self.view.frame.size.width, 1000)];
+        headview.backgroundColor=[UIColor orangeColor];
+        [_tableView insertSubview:headview belowSubview:_tableView.mj_header];
         
     }else if (showType==ShowTypeEleme){//饿了么
         
@@ -123,8 +129,13 @@
     
     
 }
+#pragma mark--Bilibili
 -(LHMBilbiliHeader *)setupBilibiliRefresh{
     LHMBilbiliHeader *header=[LHMBilbiliHeader headerWithRefreshingTarget:self refreshingAction:@selector(myRefresh)];
+    return header;
+}
+-(LHMBilibiliTwoHeader *)setupOtherBilibiliRefresh{
+    LHMBilibiliTwoHeader *header=[LHMBilibiliTwoHeader headerWithRefreshingTarget:self refreshingAction:@selector(myRefresh)];
     return header;
 }
 #pragma mark--九度财经

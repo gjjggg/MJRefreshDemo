@@ -16,6 +16,7 @@
 @implementation LHMRootViewController
 
 - (void)viewDidLoad {
+   
     [super viewDidLoad];
     self.title=@"刷新样式";
     [self setupData];
