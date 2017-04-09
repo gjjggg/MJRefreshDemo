@@ -13,6 +13,7 @@
 #import "LHMDouyuHeader.h"//自定义
 #import "LHMBilbiliHeader.h"
 #import "LHMBilibiliTwoHeader.h"
+#import "LHMElemeHeader.h"
 
 @interface LHMRefrshController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
@@ -71,18 +72,13 @@
         [_tableView insertSubview:headview belowSubview:_tableView.mj_header];
         
     }else if (showType==ShowTypeEleme){//饿了么
-        
+        _tableView.mj_header=[self setupElemeRefresh];
         
     }else if (showType==ShowTypeJiudu){//九度财经
         
         _tableView.mj_header=[self setJiuduRefresh];
     }
-    
-    
-    
-    
-    
-    
+
 }
 
 -(void)setShowType:(ShowType)showType{
@@ -136,6 +132,11 @@
 }
 -(LHMBilibiliTwoHeader *)setupOtherBilibiliRefresh{
     LHMBilibiliTwoHeader *header=[LHMBilibiliTwoHeader headerWithRefreshingTarget:self refreshingAction:@selector(myRefresh)];
+    return header;
+}
+#pragma mark--饿了么
+-(LHMElemeHeader *)setupElemeRefresh{
+    LHMElemeHeader *header=[LHMElemeHeader headerWithRefreshingTarget:self refreshingAction:@selector(myRefresh)];
     return header;
 }
 #pragma mark--九度财经

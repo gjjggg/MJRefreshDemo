@@ -93,8 +93,6 @@
 #pragma mark--松开就可以进行刷新的状态
 -(void)setupPulingState{
 self.logo1.image=[UIImage imageNamed:@"img_mj_statePulling"];
-
-
 }
 #pragma mark--正在刷新中的状态
 -(void)setupRefreshingState{

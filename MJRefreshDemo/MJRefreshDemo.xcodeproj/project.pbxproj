@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F06DBA71E99142900172F0A /* LHMElemeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F06DBA61E99142900172F0A /* LHMElemeHeader.m */; };
 		0FFCF6BB1E96808400148BB9 /* LHMDIYHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFCF6BA1E96808400148BB9 /* LHMDIYHeader.m */; };
 		6A0E87D71E97427F00AD9ED3 /* LHMBilbiliHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E87D61E97427F00AD9ED3 /* LHMBilbiliHeader.m */; };
 		6A0E87DD1E97AB6600AD9ED3 /* LHMBilibiliTwoHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0E87DC1E97AB6600AD9ED3 /* LHMBilibiliTwoHeader.m */; };
@@ -43,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F06DBA51E99142900172F0A /* LHMElemeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMElemeHeader.h; sourceTree = "<group>"; };
+		0F06DBA61E99142900172F0A /* LHMElemeHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMElemeHeader.m; sourceTree = "<group>"; };
 		0FFCF6B91E96808400148BB9 /* LHMDIYHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMDIYHeader.h; sourceTree = "<group>"; };
 		0FFCF6BA1E96808400148BB9 /* LHMDIYHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMDIYHeader.m; sourceTree = "<group>"; };
 		6A0E87D51E97427F00AD9ED3 /* LHMBilbiliHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMBilbiliHeader.h; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				6A0E87D61E97427F00AD9ED3 /* LHMBilbiliHeader.m */,
 				6A0E87DB1E97AB6600AD9ED3 /* LHMBilibiliTwoHeader.h */,
 				6A0E87DC1E97AB6600AD9ED3 /* LHMBilibiliTwoHeader.m */,
+				0F06DBA51E99142900172F0A /* LHMElemeHeader.h */,
+				0F06DBA61E99142900172F0A /* LHMElemeHeader.m */,
 			);
 			name = DIY;
 			sourceTree = "<group>";
@@ -394,6 +399,7 @@
 				6A733D461E972B7700197FDA /* UIImageView+LHMExtension.m in Sources */,
 				6A6993F71E9611790079E078 /* LHMRootViewController.m in Sources */,
 				0FFCF6BB1E96808400148BB9 /* LHMDIYHeader.m in Sources */,
+				0F06DBA71E99142900172F0A /* LHMElemeHeader.m in Sources */,
 				6AF52FDC1E962D39009EE3B1 /* UIScrollView+MJExtension.m in Sources */,
 				6AF52FD61E962D39009EE3B1 /* MJRefreshGifHeader.m in Sources */,
 				6AF52FD41E962D39009EE3B1 /* MJRefreshBackNormalFooter.m in Sources */,
